@@ -13,3 +13,9 @@ TD3 is inspired by double DQN and solves the issue of the overestimation of crit
 * Using Two main critic networks apart from their target networks.
 * Delaying update for actor-network.
 * Action noise regularisation.
+
+# Experimnet with picking cube
+![Alt text](imgs/experiment_1.png?raw=true "Experimnet with picking cube")
+
+# Multi-agent motion colision avoidance
+![Alt text](imgs/experiment_2.png?raw=true "Multi-agent motion colision avoidance")

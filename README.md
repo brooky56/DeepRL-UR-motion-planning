@@ -17,5 +17,17 @@ TD3 is inspired by double DQN and solves the issue of the overestimation of crit
 # Experimnet with picking cube
 ![Alt text](imgs/experiment_1.png?raw=true "Experimnet with picking cube")
 
-# Multi-agent motion colision avoidance
-![Alt text](imgs/experiment_2.png?raw=true "Multi-agent motion colision avoidance")
+# Multi-arm motion colision avoidance
+![Alt text](imgs/experiment_2.png?raw=true "Multi-arm motion colision avoidance")
+
+
+* Target Policy pi(a|s): It is the policy that an agent is trying to learn i.e agent is learning value function for this policy.
+
+* Behavior Policy b(a|s): It is the policy that is being used by an agent for action select i.e agent follows this policy to interact with the environment.
+
+# On-Policy learning
+On-Policy learning algorithms are the algorithms that evaluate and improve the same policy which is being used to select actions. That means we will try to evaluate and improve the same policy that the agent is already using for action selection. In short , [Target Policy == Behavior Policy]. Some examples of On-Policy algorithms are Policy Iteration, Value Iteration, Monte Carlo for On-Policy, Sarsa, etc.
+
+- Continuous exploration: As an agent is learning other policy then it can be used for continuing exploration while learning optimal policy. Whereas On-Policy learns suboptimal policy.
+- Learning from Demonstration: Agent can learn from the demonstration.
+- Parallel Learning: This speeds up the convergence i.e learning can be fast.
